@@ -1,0 +1,91 @@
+
+.collapse-content
+  display: flex
+  justify-content: space-between
+  MARGIN: 0 50PX
+
+  .collapse-content ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+  .about
+    width: 45%
+    margin: 20px 0
+
+    .collapse, .collapse-child
+      width: 98%
+
+    .collapse-child
+      height: 150px
+      margin: 0
+      transition: 0.3s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out
+
+      p
+        margin: 0
+
+.apartment
+  display: flex
+  justify-content: space-between
+  MARGIN: 0 50PX
+
+  .apartment-info
+  h1
+    color: #FF6060
+    font-size: 20px
+
+  ul
+    display: flex
+    flex-wrap: wrap
+    gap: 10px
+    width: 100%
+    padding: 0
+
+  li
+    background-color: #FF6060
+    border-radius: 11px
+    list-style-type: none
+    padding: 4px 10px
+    color: white
+    font-size: 13px
+    font-weight: bold
+
+.host
+  display: flex
+  align-items: center
+  gap: 10px
+
+  span
+    width: 40%
+    color: #FF6060
+
+  img
+    border-radius: 100px
+    height: 50px
+
+@media screen and (max-width: 767px)
+  .apartment
+    display: block
+    margin: 0 30px
+
+  .host-info
+    display: flex
+    flex-direction: row-reverse
+    justify-content: space-around
+
+  .rating
+    margin-top: 20px
+    display: flex
+    justify-content: unset
+    width: 100%
+
+  .collapse-content
+    display: block
+    margin: 0 30px
+
+    .about
+      width: 100%
+      margin: 25px 0
+
+  .host
+    gap: 25px
