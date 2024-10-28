@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function LocationCard() {
   const [logements, setLogements] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3001/logements")
+    fetch("http://kasa-project-production.up.railway.app/logements")
       .then((response) => response.json())
       .then((data) => setLogements(data))
       .catch((error) => console.error("Error fetching photos:", error));

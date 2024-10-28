@@ -12,7 +12,7 @@ function Apartments() {
 
   useEffect(() => {
     console.log(`Fetching logement with id: ${id}`);
-    fetch(`http://localhost:3001/logements/${id}`)
+    fetch(`http://kasa-project-production.up.railway.app/logements/${id}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
